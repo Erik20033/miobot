@@ -52,7 +52,7 @@ def check_membership(message):
             # 3. MANDA IL NUOVO AVVISO E SALVA L'ID
             new_msg = bot.send_message(
                 chat_id, 
-                f"⚠️ Ehi {message.from_user.first_name}, per scrivere qui devi prima unirti al canale {CH_USERNAME}!"
+                f"⚠️ Benvenuto {message.from_user.first_name}! Per scrivere qui devi prima unirti al canale {CH_USERNAME}!"
             )
             pending_warnings[user_id] = new_msg.message_id
 
